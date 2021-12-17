@@ -143,7 +143,6 @@ const Process = () => {
                             <p className="mt-3 ">
                                 {process.para2}
                             </p>
-
                             <p className="mt-3 ">
                                 {process.para3}
                             </p>
