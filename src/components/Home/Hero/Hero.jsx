@@ -1,5 +1,4 @@
 import React from 'react'
-// import hero from 
 import { StaticImage } from "gatsby-plugin-image"
 // import Img from "gatsby-image"
 const Hero = () => {

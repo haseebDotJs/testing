@@ -4,8 +4,10 @@ import pic1 from "../../../images/atob-site.png"
 import pic2 from "../../../images/gundies-desktop.png"
 import pic3 from "../../../images/lv-site.jpg"
 import Card from './Card'
+import { graphql } from 'gatsby'
 
-const CaseStudies = () => {
+const CaseStudies = (props) => {
+    console.log("data", props)
     const cardData = [
         {
             cardOptions: ["Web Platforms", "Graphic Design", "Animation", "API Development", "Layout Design and Print", "SEO", "UX", "Web Design", "Web Development"],
@@ -40,7 +42,9 @@ const CaseStudies = () => {
                     <div className="mt-20 grid lg:grid-cols-3 gap-8 ">
                         {
                             cardData.map(data => (
-                                <Card pic={data.pic} cardOptions={data.cardOptions} heading={data.heading} subHeading={data.subHeading} />
+                                <div key={data.heading}>
+                                    <Card pic={data.pic} cardOptions={data.cardOptions} heading={data.heading} subHeading={data.subHeading} />
+                                </div>
                             ))
                         }
                     </div>
@@ -49,5 +53,22 @@ const CaseStudies = () => {
         </section>
     )
 }
-
+export const query = graphql`
+query atobImage {
+    file(relativePath: {eq: "atob-site.png"}) {
+        id
+        childImageSharp {
+          fluid {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+            originalImg
+            originalName
+          }
+        }
+      }
+  }
+  
+`
 export default CaseStudies

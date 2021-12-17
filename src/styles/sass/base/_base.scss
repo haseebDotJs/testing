@@ -11,36 +11,72 @@
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-ExtraBold.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-ExtraBold.otf") format("opentype");
 //     font-weight: 800;
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Bold.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Bold.otf") format("opentype");
 //     font-weight: 600;
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Demi.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Demi.otf") format("opentype");
 //     font-weight: 500;
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Regular.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Regular.otf") format("opentype");
 //     font-weight: 400;
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Light.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Light.otf") format("opentype");
 //     font-weight: 300;
 // }
 // @font-face {
 //     font-family: "F37Ginger";
-//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Thin.otf") format("truetype");
+//     src: local("F37Ginger"), url("../../../font/Psdkeys-com-F37_Ginger_Pro/F37GingerPro-Thin.otf") format("opentype");
+//     font-weight: 100;
+// }
+
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Black.ttf") format("truetype");
+//     font-weight: 900;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Bold.ttf") format("truetype");
+//     font-weight: 800;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Bold.ttf") format("truetype");
+//     font-weight: 600;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Medium.ttf") format("truetype");
+//     font-weight: 500;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Regular.ttf") format("truetype");
+//     font-weight: 400;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Light.ttf") format("truetype");
+//     font-weight: 300;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: local("Roboto"), url("../../../font/Roboto/Roboto-Thin.ttf") format("truetype");
 //     font-weight: 100;
 // }
 body {
-    font-family: F37Ginger, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-weight: 400;
     color: $color-dark;
     line-height: 1.7;

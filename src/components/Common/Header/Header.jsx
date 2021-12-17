@@ -71,15 +71,13 @@ const Header = () => {
     useEffect(() => {
         const activateNav = navItems.map(item => item.link === pathname ? { ...item, active: true } : { ...item, active: false })
         setNavItems(activateNav)
-
     }, []);
-
-
 
     const handleNavClick = (link) => {
         const activateNav = navItems.map(item => item.link === link ? { ...item, active: true } : { ...item, active: false })
         setNavItems(activateNav)
     }
+
     return (
         <header className="header container-p">
             <div className="header__top grid grid-cols-2 flex justify-between items-center mx-auto py-7 max-lg">
@@ -99,10 +97,10 @@ const Header = () => {
                 <div className="header__desktop-menu ml-auto flex items-center relative">
                     {navItems.map(item => (
                         item.link === "/service" ?
-                            <div className="flex justify-center items-center header__desktop-menu--service" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                            <div className="flex justify-center items-center header__desktop-menu--service" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} key={item.link}>
 
                                 <Link to="/service" onClick={() => handleNavClick(item.link)}>
-                                    <p className={`text-center font-medium header__nav-item py-2 ${item.active && "color-olive"}`} >
+                                    <p className={`text-center font-medium header__nav-item py-2 ${item.active && "color-olive header__desktop-menu--active"}`} >
                                         {item.navItem}
                                     </p>
                                 </Link>
@@ -131,8 +129,8 @@ const Header = () => {
                                 }
                             </div>
                             :
-                            <Link className="ml-12" to={item.link} onClick={() => handleNavClick(item.link)}>
-                                <p className={`font-medium header__nav-item py-2 ${item.active && "color-olive"}`}>
+                            <Link className="ml-12" to={item.link} onClick={() => handleNavClick(item.link)} key={item.link}>
+                                <p className={`font-medium header__nav-item py-2 ${item.active && "color-olive header__desktop-menu--active"}`}>
                                     {item.navItem}
                                 </p>
                             </Link>

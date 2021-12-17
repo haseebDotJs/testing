@@ -1,12 +1,14 @@
 import React from 'react'
-import webDesign from "../../../images/case-studies-ab-tyres-branding-site.png"
+// import webDesign from "../../../images/case-studies-ab-tyres-branding-site.png"
+import { StaticImage } from "gatsby-plugin-image"
 import Button from "../../Common/Button";
 const Responsive = () => {
     return (
         <section className="responsive light-bg">
             <div className="container-ez max-xl grid md:grid-cols-2 gap-6">
                 <div>
-                    <img src={webDesign} alt="responsive web design" />
+                    <StaticImage layout="fullWidth" src={"../../../images/case-studies-ab-tyres-branding-site.png"} alt="responsive web design" placeholder="blurred" />
+                    {/* <img src={webDesign}  /> */}
                 </div>
                 <div >
                     <div className="sticky top-0">

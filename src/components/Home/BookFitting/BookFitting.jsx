@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from "../../Common/Button";
-import phones from "../../../images/case-studies-ab-tyres-branding-phones.png"
+// import phones from "../../../images/case-studies-ab-tyres-branding-phones.png"
+import { StaticImage } from "gatsby-plugin-image"
+
 const BookFitting = () => {
     return (
         <section className="bookFitting light-bg">
@@ -28,7 +30,8 @@ const BookFitting = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={phones} alt="phones" />
+                    <StaticImage layout="fullWidth" src={"../../../images/case-studies-ab-tyres-branding-phones.png"} alt="phones" placeholder="blurred" />
+
                 </div>
             </div>
         </section>

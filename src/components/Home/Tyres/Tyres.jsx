@@ -1,9 +1,11 @@
 import React from 'react'
-import tyres from "../../../images/case-studies-ab-tyres-branding-photography.png"
+// import tyres from "../../../images/case-studies-ab-tyres-branding-photography.png"
+import { StaticImage } from "gatsby-plugin-image"
+
 const Tyres = () => {
     return (
         <div className="light-bg pb-20">
-            <img width="100%" src={tyres} alt="man working with tyres" />
+            <StaticImage layout="fullWidth" src={"../../../images/case-studies-ab-tyres-branding-photography.png"} alt="man working with tyres"  placeholder="blurred" />
         </div>
     )
 }

@@ -25,6 +25,12 @@
     &__desktop-menu {
         display: none;
         position: relative;
+        // to overwrite/cancel  hover of __nav-item when a menu item is active
+        &--active{
+            &:hover{
+                opacity: 1 !important;
+            }
+        }
         &--service-options {
             position: absolute;
             width: 190px;

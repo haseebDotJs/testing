@@ -1,5 +1,7 @@
 import React from 'react'
-import success from "../../../images/case-studies-ab-tyres-branding-top.png"
+// import success from "../../../images/case-studies-ab-tyres-branding-top.png"
+import { StaticImage } from "gatsby-plugin-image"
+
 const Success = () => {
     return (
         <section className="success light-bg ">
@@ -18,7 +20,7 @@ const Success = () => {
                     </div>
                 </div>
                 <div >
-                    <img src={success} alt="case-studies-ab-tyres-branding-top" />
+                    <StaticImage layout="fullWidth" src={"../../../images/case-studies-ab-tyres-branding-top.png"} alt="branding" placeholder="blurred" />
                 </div>
             </div>
         </section>
