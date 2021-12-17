@@ -64,6 +64,11 @@
         left: 0;
         right: 0;
         text-align: center;
+        &--active{
+            &:hover{
+                opacity: 1 !important;
+            }
+        }
         &--serviceOpen {
             background-color: $color-primary;
             position: fixed;

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from "gatsby"
-const Card = ({ pic, cardOptions }) => {
+import Img from "gatsby-image"
+const Card = ({ fluid, cardOptions }) => {
     return (
         <div>
-            <Link to="/">
+            {/* <Link to="/"> */}
                 <div className="transition-all duration-300 hover:shadow-xl cursor-pointer  ">
-                    <img src={pic} alt="a-to-b tyres" />
+                    <Img fluid={fluid}  />
                     <div className="caseStudies__textContainer p-6 bg-white ">
                         <div className="ml-1">
                             <h4 className="font-medium">A to B Tyres</h4>
@@ -28,7 +28,7 @@ const Card = ({ pic, cardOptions }) => {
                     </div>
 
                 </div>
-            </Link>
+            {/* </Link> */}
         </div>
     )
 }

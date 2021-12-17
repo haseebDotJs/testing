@@ -150,10 +150,10 @@ const Header = () => {
                         <div style={{ marginTop: "-80px" }}>
                             {navItems.map(item => (
                                 item.link === "/service" ?
-                                    <div>
+                                    <div key={item.link}>
                                         <div className="flex justify-center items-center" onClick={() => setServiceOpen(true)}>
                                             <Link to="/service">
-                                                <p className={`p-xl text-center font-bold header__mobile-menu--nav-item ${item.active && "color-olive"}`}>
+                                                <p className={`p-xl text-center font-bold header__mobile-menu--nav-item  ${item.active && "color-olive header__mobile-menu--active"}`}>
                                                     {item.navItem}
                                                 </p>
                                             </Link>
@@ -163,7 +163,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                     :
-                                    <Link to={item.link}>
+                                    <Link to={item.link} key={item.link}>
                                         <p className={`mt-12 p-xl font-bold header__mobile-menu--nav-item ${item.active && "color-olive"}`}>
                                             {item.navItem}
                                         </p>
